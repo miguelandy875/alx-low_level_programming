@@ -1,1 +1,3 @@
-# This repo holds directories that contains source code files for C programming
+# Low-level programming & Algorithm
+
+- Programing with C
