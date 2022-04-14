@@ -2,7 +2,7 @@
 
 /**
   * print_times_table - Prints a multiplication table
-  * parameter n: The number to be used
+  * @n: The number to be used
   *
   * Return: numbers
   */
