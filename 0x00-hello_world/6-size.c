@@ -8,13 +8,15 @@
 int main(void)
 {
 	char c;
-	short s;
 	int i;
 	long l;
+	long long ll;
+	float f;
 
-	printf(" The size of Char datatype is %lu byte(s)\n", sizeof(c));
-	printf(" The size of short datatype is %lu byte(s)\n", sizeof(s));
-	printf(" The size of int datatype is %lu byte(s)\n", sizeof(i));
-	printf(" The size of long datatype is %lu byte(s)\n", sizeof(l));
+	printf(" size of a Char:  %lu byte(s)\n", sizeof(c));
+	printf(" size of a int:  %lu byte(s)\n", sizeof(i));
+	printf(" size of a long:  %lu byte(s)\n", sizeof(l));
+	printf(" size of a long long:  %lu byte(s)\n", sizeof(ll));
+	printf(" size of a float:  %lu byte(s)\n", sizeof(f));
 	return (0);
 }
