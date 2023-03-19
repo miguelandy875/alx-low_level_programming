@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* entry point */
+/* 
+ * more headers goes there
+ * main - entry point
+ */
 int main(void)
 {
 	int n;
