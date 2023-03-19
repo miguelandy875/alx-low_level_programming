@@ -12,9 +12,9 @@ int main(void)
 	int i;
 	long l;
 
-	prinf(" The size of Char datatype is %lu byte(s)\n", sizeof(c));
-	prinf(" The size of short datatype is %lu byte(s)\n", sizeof(s));
-	prinf(" The size of int datatype is %lu byte(s)\n", sizeof(i));
-	prinf(" The size of long datatype is %lu byte(s)\n", sizeof(l));
+	printf(" The size of Char datatype is %lu byte(s)\n", sizeof(c));
+	printf(" The size of short datatype is %lu byte(s)\n", sizeof(s));
+	printf(" The size of int datatype is %lu byte(s)\n", sizeof(i));
+	printf(" The size of long datatype is %lu byte(s)\n", sizeof(l));
 	return (0);
 }
