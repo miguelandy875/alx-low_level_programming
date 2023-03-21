@@ -9,15 +9,16 @@
 
 int main(void)
 {
-	char alpha, e, q;
+	int n;
 
-	e = 'e';
-	q = 'q';
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	for (n = '0'; n <= '9'; n++)
 	{
-		if (alpha != e && alpha != q)
-			putchar(alpha);
+		putchar(n);
+		if (n != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 

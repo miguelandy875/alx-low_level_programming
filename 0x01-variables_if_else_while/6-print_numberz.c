@@ -9,16 +9,10 @@
 
 int main(void)
 {
-	char alpha, e, q;
+	int n;
 
-	e = 'e';
-	q = 'q';
-
-	for (alpha = 'a'; alpha <= 'z'; alpha++)
-	{
-		if (alpha != e && alpha != q)
-			putchar(alpha);
-	}
+	for (n = '0'; n <= '9'; n++)
+		putchar(n);
 	putchar('\n');
 
 	return (0);
