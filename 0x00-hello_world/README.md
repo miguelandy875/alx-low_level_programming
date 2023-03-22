@@ -1,1 +1,1 @@
-This director containes C source code
+# project: 0x00. C - Hello, World
