@@ -8,15 +8,15 @@
  */
 int main(void)
 {
-	char arr_of_char[9];
-	int counter;
-
-	for (counter = 0; counter < 10 ; counter++)
-		_putchar(arr_of_char[counter]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 
 	return (0);
 }
-
-
-
