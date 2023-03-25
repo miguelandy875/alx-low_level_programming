@@ -1,25 +1,25 @@
-#include "main.h"
+ #include "main.h"
 
 /**
-  * print_most_numbers - write numbers 0 to 9 followed by a new line.
+  * print_most_numbers - Print the numbers since 0 up to 9
   *
-  * condition: Do not print 2 and 4
+  * Description: Prints the numbers excluding 2 and 4
   *
-  * Return: none (void datatype in use)
+  * Return: The numbers since 0 up to 9
   */
 void print_most_numbers(void)
 {
-	int n;
+	int x = 0;
 
-	for (n = 0; n <= 9; n++)
+	for (; x <= 9; x++)
 	{
-		if (n == 2 || n == 4)
+		if (x == 2 || x == 4)
 		{
 			continue;
 		}
 		else
 		{
-			_putchar(n);
+			_putchar(x + '0');
 		}
 	}
 
