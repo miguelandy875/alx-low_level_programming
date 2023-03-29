@@ -7,7 +7,7 @@
   * Return: void
   */
 void _puts(char *str)
-{i
+{
 	for (; *str != '\0'; str++)
 	{
 		_putchar(*str);
