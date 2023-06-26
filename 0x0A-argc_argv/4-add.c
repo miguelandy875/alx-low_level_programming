@@ -1,84 +1,47 @@
 #include <stdio.h>
-	#include <stdlib.h>
-	#include <ctype.h>
-	#include <string.h>
-	/**
-	 * check_num - check - string there are digit
-	 * @str: array str
-	 *
-	 * Return: Always 0 (Success)
-	 */
-	int check_num(char *str)
-	{
-		/*Declaring variables*/
-		unsigned int count;
+#include <stdlib.h>
+#include <string.h>
+#include <main.h>
 
+/**
+  * main - args positive numbers sum
+  * @argc: argument
+  * @argv: array of argument
+  *
+  * Return: Always zero
+  */
+int main(int argc, char *argv[])
+{
+        int o;
+        unsigned int p, sum = 0;
+        char *q;
 
-		count = 0;
-		while (count < strlen(str)) /*count string*/
+        if (argc > 1)
+        {
+                for (o = 1; o < argc; o++)
+                {
+                        q = argv[o];
 
+                        for (p = 0; p < strlen(q); p++)
+                        {
+                                if (q[p] < 48 || q[p] > 57)
+                                {
+                                        printf("Error\n");
+                                        return (1);
+                                }
+                        }
 
-		{
-			if (!isdigit(str[count])) /*check if str there are digit*/
-			{
-				return (0);
-			}
+                        sum += atoi(q);
+                        q++;
+                }
 
+                printf("%d\n", sum);
+        }
+        else
+        {
+                printf("0\n");
+        }
 
-			count++;
-		}
-		return (1);
-	}
-
-
-	/**
-	 * main - Print the name of the program
-	 * @argc: Count arguments
-	 * @argv: Arguments
-	 *
-	 * Return: Always 0 (Success)
-	 */
-
-
-	int main(int argc, char *argv[])
-
-
-	{
-
-
-		/*Declaring variables*/
-		int count;
-		int str_to_int;
-		int sum = 0;
-
-
-		count = 1;
-		while (count < argc) /*Goes through the whole array*/
-		{
-			if (check_num(argv[count]))
-
-
-			{
-				str_to_int = atoi(argv[count]); /*ATOI --> convert string to int*/
-				sum += str_to_int;
-			}
-
-
-			/*Condition if one of the number contains symbols that are not digits*/
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-
-
-			count++;
-		}
-
-
-		printf("%d\n", sum); /*print sum*/
-
-
-		return (0);
-	}
+        return (0);
+}
 
