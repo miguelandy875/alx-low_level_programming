@@ -2,9 +2,8 @@
 #include <stdlib.h>
 
 /**
- * free_grid - truncates the grid
- * @grid: the address of the two dimensional grid
- * @width: width of the grid
+ * free_grid - truncates the arr
+ * @grid: the address of the two dimensional arr
  * @height: height of the grid
  */
 void free_grid(int **grid, int height)
