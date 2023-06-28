@@ -1,7 +1,7 @@
 ## Project: 0x0D. C - Preprocessor
 ### Tasks:
 - [0-object_like_macro.h](https://github.com/miguelandy875/alx-low_level_programming/blob/master/0x0D-preprocessor/0-object_like_macro.h) Create a header file that defines a macro named `SIZE` as an abbreviation for the token `1024`.
-### _Usage:_ 
+### __Usage:__ 
 ```c
 #include "0-object_like_macro.h"
 #include "0-object_like_macro.h"
