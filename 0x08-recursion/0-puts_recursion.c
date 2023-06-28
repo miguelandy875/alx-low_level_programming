@@ -4,13 +4,13 @@
   * _puts_recursion - altenative for puts();
   * @str: input
   *
-  * Return: Always 0 (Success)
+  * Return: void
   */
 void _puts_recursion(char *str)
 {
-	 if (*str == '\0')
+	if (*str == '\0')
 	{
-		_putchar('\n')
+		_putchar('\n');
 		return;
 	}
 
@@ -18,4 +18,3 @@ void _puts_recursion(char *str)
 	str++;
 	_puts_recursion(str);
 }
-
