@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * string_nconcat - concatition 
+  * string_nconcat - concatition
   * @s1: string 1
   * @s2: string 2
   * @n: number of btes
