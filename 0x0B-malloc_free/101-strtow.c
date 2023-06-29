@@ -59,7 +59,7 @@ char **strtow(char *str)
 				if (x == NULL)
 					return (NULL);
 				while (j < k)
-			 		*x++ = str[j++];
+				*x++ = str[j++];
 				*x = '\0';
 				grid[n] = x - o;
 				n++;
