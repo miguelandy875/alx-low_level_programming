@@ -2,11 +2,9 @@
 #include <stdlib.h>
 
 /**
- * initDigitArray - allocates and sets to 0 an array to contain the digits
- *   of a base 10 number
- *
- * @size: array size
- * Return: pointer to initialized array, or NULL on failure
+ * initDigitArray - ...
+ * @size: ...
+ * Return: ...
  */
 unsigned int *initDigitArray(size_t size)
 {
@@ -27,11 +25,11 @@ unsigned int *initDigitArray(size_t size)
 /**
  * stringIntMultiply - TBD
  *
- * @prod_digits: array to store digits of product
- * @n1_digits: string containing multiplicand digits in ASCII
- * @n2_digits: string containing multiplier digits in ASCII
- * @n1_len: amount of digits in multiplicand
- * @n2_len: amount of digits in multiplier
+ * @prod_digits: array to store product operands
+ * @n1_digits: multiplicand digits in ASCII
+ * @n2_digits: multiplier digits in ASCII
+ * @n1_len: digits in multiplicand
+ * @n2_len: digits in multiplier
  */
 void stringIntMultiply(unsigned int *prod_digits, char *n1_digits,
 		       char *n2_digits, size_t n1_len, size_t n2_len)
@@ -65,10 +63,10 @@ void stringIntMultiply(unsigned int *prod_digits, char *n1_digits,
 
 
 /**
- * stringIsPosInt - validates if string represents a positive integer
+ * stringIsPosInt - validates for a positive integer
  *
- * @s: string to test
- * Return: 1 if true, 0 if false
+ * @s: string to be used
+ * Return: 1 for sucess, 0 otherwise
  */
 int stringIsPosInt(char *s)
 {
@@ -87,7 +85,7 @@ int stringIsPosInt(char *s)
 /**
  * error - error return
  *
- * @status: error code to exit with
+ * @status: exit code
  */
 void error(int status)
 {
@@ -104,9 +102,9 @@ void error(int status)
 /**
  * main - entry point
  *
- * @argc: number of commmand line arguments
- * @argv: array of commmand line arguments
- * Return: 0 on success, 98 on failure
+ * @argc: number of cmd line arguments
+ * @argv: array of cmd line arguments
+ * Return: 0 success, 98 otherwise
  */
 int main(int argc, char **argv)
 {
@@ -130,7 +128,6 @@ int main(int argc, char **argv)
 
 	stringIntMultiply(prod_digits, argv[1], argv[2], av1_len, av2_len);
 
-	/* omit leading zeroes */
 	for (i = 0; !prod_digits[i] && i < prod_len; i++)
 	{}
 
