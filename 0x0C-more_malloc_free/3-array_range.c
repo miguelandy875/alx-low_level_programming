@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  * array_range - creation of int arr 
+  * array_range - creation of int arr
   * @min: min valiation
   * @max: max valiation
   *
