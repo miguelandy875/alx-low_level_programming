@@ -3,7 +3,7 @@
 /**
  * struct op - structure named op.
  * @op: The operator.
- * a_func: an associated function.
+ * @a_func: an associated function.
  */
 typedef struct op
 {
@@ -17,6 +17,4 @@ int op_mul(int a, int b);
 int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *str))(int, int);
-
 #endif
-
