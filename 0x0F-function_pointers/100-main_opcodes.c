@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints the operation codes    
+ * main - prints the operation codes
  * @argc: number of arguments
  * @argv: array of arguments
  *
