@@ -1,31 +1,32 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
-  * free_listint_safe - frees the list
-  * @h: head
+  * free_listint_safe - truncates the list
+  * @h: linked list head
   *
-  * Return: number
+  * Return: size of the list that was free’d
   */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t a;
-	listint_t *b;
+	size_t i;
+	listint_t *j;
 
-	a = 0;
+  i = 0;
 	if (!h)
-	return (a);
+	return (i);
 	while (*h && *h > (*h)->next)
 	{
-		b = *h;
+		j = *h;
 		*h = (*h)->next;
-		free(b);
-		a++;
+		free(j);
+		i++;
 	}
 	if (*h)
 	{
 		free(*h);
 		*h = NULL;
-		a++;
+		i++;
 	}
-	return (a);
+	return (i);
 }

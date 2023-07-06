@@ -7,24 +7,24 @@
   */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *a = head;
-	listint_t *b = head;
+	listint_t *i = head;
+	listint_t *j = head;
 
 	if (!head)
 	return (NULL);
-	while (a && b && b->next)
+	while (i && j && j->next)
 	{
-		b = b->next->next;
-		a = a->next;
-		if (b == a)
+		j = j->next->next;
+		i = i->next;
+		if (j == i)
 		{
-			a = head;
-			while (a != b)
+			i = head;
+			while (i != j)
 			{
-				a = a->next;
-				b = b->next;
+				i = i->next;
+				j = j->next;
 			}
-		return (b);
+		return (j);
 		}
 	}
 	return (NULL);

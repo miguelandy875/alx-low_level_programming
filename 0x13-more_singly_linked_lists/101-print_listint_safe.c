@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -8,19 +9,19 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	size_t i;
-	listint_t *b = (listint_t *)head;
+	listint_t *j = (listint_t *)head;
 
 	i = 0;
-	while (b && b > b->next)
+	while (j && j > j->next)
 	{
-		printf("[%p] %d\n", (void *)b, b->n);
-		b = b->next;
+		printf("[%p] %d\n", (void *)j, j->n);
+		j = j->next;
 		i++;
 	}
-	if (b)
+	if (j)
 	{
-		printf("[%p] %d\n", (void *)b, b->n);
-		printf("-> [%p] %d\n", (void *)b->next, b->next->n);
+		printf("[%p] %d\n", (void *)j, j->n);
+		printf("-> [%p] %d\n", (void *)j->next, j->next->n);
 		i++;
 	}
 	return (i);
