@@ -3,7 +3,7 @@
 
 /**
   * free_listint2 - truncates a list & set head to null.
-  * @head: linked list head 
+  * @head: linked list head
   *
   * Return: void
   */

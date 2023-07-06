@@ -3,7 +3,7 @@
 
 /**
   * listint_len - Counter for linked list element
-  * @h: linked list head 
+  * @h: linked list head
   *
   * Return: linked list nodes
   */

@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * get_nodeint_at_index - operation on list. 
+  * get_nodeint_at_index - operation on list.
   * @head: linked link head
   * @index: node index
   *
