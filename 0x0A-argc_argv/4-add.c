@@ -1,34 +1,46 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
-  * main - prints minimum number of coins for monei change
-  * @argc: arguments count
-  * @argv: array of strings
+  * main - args positive numbers sum
+  * @argc: argument
+  * @argv: array of argument
   *
-  * Return: 0 Success, 1 failure
+  * Return: Always zero
   */
 int main(int argc, char *argv[])
 {
-	int i, sum;
+	int o;
+	unsigned int p, sum = 0;
+	char *q;
 
-	if (argc != 1)
+	if (argc > 1)
 	{
-		for (i = 1; i < argc; i++)
+		for (o = 1; o < argc; o++)
 		{
-			if (*argv[i] >= 48 && *argv[i] <= 57)
+			q = argv[o];
+
+			for (p = 0; p < strlen(q); p++)
 			{
-				sum += atoi(argv[i]);
-			}else{
-				printf("Error\n");
-				return (1);
-				break;
+				if (q[p] < 48 || q[p] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+			sum += atoi(q);
+			q++;
 		}
 		printf("%d\n", sum);
-	}else{
+	}
+	else
+	{
 		printf("0\n");
 	}
-	return(0);
+
+	return (0);
 }
+
+
